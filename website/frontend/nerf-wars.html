@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerf Wars – Signature Celebrations Event Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--navy:#1a2744;--gold:#b8922a;--gold-lt:#d4aa50;--cream:#faf8f3;--white:#ffffff;--text:#2d2d2d;--muted:#6b6b6b;--border:rgba(184,146,42,0.25);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Lato',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden;}
+    img{display:block;max-width:100%;}
+    a{text-decoration:none;color:inherit;}
+    .section-label{font-family:'Cinzel',serif;letter-spacing:.25em;font-size:.7rem;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+    .divider{width:60px;height:2px;background:var(--gold);margin:1.25rem auto;}
+    .divider.left{margin-left:0;}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4%;background:rgba(26,39,68,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,146,42,.2);}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;}
+    .nav-brand{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.15em;color:var(--cream);text-transform:uppercase;line-height:1.4;}
+    .nav-brand span{display:block;color:var(--gold);font-size:.65rem;letter-spacing:.25em;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);transition:color .2s;}
+    .nav-links a:hover{color:var(--gold);}
+    .nav-cta{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.6rem;border:1px solid var(--gold);color:var(--gold);cursor:pointer;transition:background .2s,color .2s;}
+    .nav-cta:hover{background:var(--gold);color:#fff;}
+
+    .page-hero{background:var(--navy);padding:140px 5% 70px;position:relative;overflow:hidden;}
+    .page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(184,146,42,.07) 0%,transparent 70%);pointer-events:none;}
+    .page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+    .page-hero-inner{max-width:1280px;margin:0 auto;position:relative;}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.25rem;}
+    .breadcrumb a{color:var(--gold-lt);}
+    .breadcrumb span{margin:0 .5rem;}
+    .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.5rem);font-weight:300;color:var(--white);line-height:1.08;margin-bottom:1rem;}
+    .page-hero h1 em{font-style:italic;color:var(--gold-lt);}
+    .hero-desc{font-size:1rem;color:rgba(255,255,255,.6);max-width:600px;line-height:1.85;font-weight:300;}
+    .diy-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.25rem;padding:.55rem 1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.2);font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+
+    /* PACKAGES */
+    .packages-section{padding:6rem 5%;max-width:1280px;margin:0 auto;}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--navy);margin-bottom:.5rem;}
+    .section-title em{font-style:italic;color:var(--gold);}
+
+    .package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+    .pkg-card{border:1px solid var(--border);background:var(--white);padding:2.5rem 2rem;display:flex;flex-direction:column;transition:border-color .3s,transform .3s,box-shadow .3s;}
+    .pkg-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,146,42,.1);}
+    .pkg-card.featured{background:var(--navy);border-color:var(--gold);}
+    .pkg-img{aspect-ratio:1/1;background:rgba(26,39,68,.06);margin:-2.5rem -2rem 2rem;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;}
+    .pkg-card.featured .pkg-img{background:rgba(0,0,0,.25);}
+    .ph-icon{font-size:3rem;opacity:.3;}
+    .ph-text{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(0,0,0,.2);}
+    .pkg-card.featured .ph-text{color:rgba(255,255,255,.18);}
+    .pkg-tier{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem;}
+    .pkg-card.featured .pkg-tier{color:var(--gold-lt);}
+    .pkg-name{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--navy);margin-bottom:.25rem;}
+    .pkg-card.featured .pkg-name{color:var(--white);}
+    .pkg-price{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:.25rem;}
+    .pkg-period{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;}
+    .pkg-card.featured .pkg-period{color:rgba(255,255,255,.45);}
+    .pkg-divider{width:100%;height:1px;background:var(--border);margin-bottom:1.5rem;}
+    .pkg-card.featured .pkg-divider{background:rgba(184,146,42,.3);}
+    .pkg-features{list-style:none;flex:1;margin-bottom:1.75rem;}
+    .pkg-features li{font-size:.87rem;color:var(--muted);padding:.45rem 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:.65rem;align-items:baseline;}
+    .pkg-card.featured .pkg-features li{color:rgba(255,255,255,.65);border-bottom-color:rgba(255,255,255,.07);}
+    .pkg-features li::before{content:'✦';color:var(--gold);font-size:.6rem;flex-shrink:0;}
+    .pkg-cta{width:100%;padding:.85rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;}
+    .pkg-cta:hover{background:var(--navy);}
+    .pkg-card.featured .pkg-cta{background:var(--gold-lt);}
+    .pkg-card.featured .pkg-cta:hover{background:var(--white);color:var(--navy);}
+
+    /* ARTILLERY FEATURE */
+    .artillery{background:var(--navy);display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:5rem;border:1px solid rgba(184,146,42,.25);overflow:hidden;}
+    .art-img{aspect-ratio:1/1;background:#0f1929;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;}
+    .art-body{padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center;}
+    .art-eyebrow{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:1rem;}
+    .art-body h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--white);line-height:1.15;margin-bottom:1rem;}
+    .art-body h2 em{font-style:italic;color:var(--gold-lt);}
+    .art-body p{font-size:.92rem;color:rgba(255,255,255,.6);line-height:1.85;margin-bottom:.75rem;}
+    .art-price{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold);margin:1rem 0 .2rem;}
+    .art-note{font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem;font-style:italic;}
+    .art-cart{display:inline-block;padding:.85rem 2.4rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;}
+    .art-cart:hover{background:var(--gold-lt);}
+
+    /* INFO BOX */
+    .info-box{background:rgba(184,146,42,.06);border:1px solid var(--border);padding:2.25rem 2rem;margin-top:3rem;display:flex;align-items:flex-start;gap:1.25rem;}
+    .ib-icon{font-size:1.5rem;flex-shrink:0;}
+    .info-box h4{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);margin-bottom:.4rem;}
+    .info-box p{font-size:.87rem;color:var(--muted);line-height:1.7;}
+    .info-box.dark-box{background:var(--navy);border-left:3px solid var(--gold);}
+    .info-box.dark-box h4{color:var(--white);}
+    .info-box.dark-box p{color:rgba(255,255,255,.6);}
+
+    .footer-links-bar{background:var(--navy);padding:2rem 5%;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(184,146,42,.15);}
+    .footer-links-bar a{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .2s;}
+    .footer-links-bar a:hover{color:var(--gold);}
+    .footer-links-bar .pipe{color:rgba(255,255,255,.2);}
+    footer{background:#0f1929;padding:3rem 5%;text-align:center;}
+    footer p{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.3);text-transform:uppercase;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .fade-up{animation:fadeUp .7s ease both;}
+
+    @media(max-width:900px){.package-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}.artillery{grid-template-columns:1fr;}}
+    @media(max-width:580px){.package-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,146,42,.15);border:1.5px solid rgba(184,146,42,.35);display:flex;align-items:center;justify-content:center;">
+      <span style="font-family:'Cinzel',serif;color:var(--gold);font-size:.8rem;font-weight:700;">SC</span>
+    </div>
+    <div class="nav-brand">Signature Celebrations<span>Event Rentals</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inflatables.html">Inflatables</a></li>
+    <li><a href="tents-equipment.html">Tents & Equipment</a></li>
+    <li><a href="nerf-wars.html" style="color:var(--gold);">Nerf Wars</a></li>
+    <li><a href="stag-and-doe.html">Stag & Doe</a></li>
+    <li><a href="snack-machines.html">Snacks</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-inner fade-up">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Nerf Wars</div>
+    <h1>Turn Your Party<br>Into a <em>Battle Zone.</em></h1>
+    <p class="hero-desc">Choose from Silver, Gold, or Platinum packages and host your own tactical Nerf war — the ultimate outdoor experience for kids, teens, and even adults. All equipment included. All the fun guaranteed.</p>
+    <div class="diy-badge">📦 DIY Pick-Up Available · Easy Setup Guide Included</div>
+  </div>
+</section>
+
+<section class="packages-section">
+
+  <p class="section-label">Choose Your Package</p>
+  <h2 class="section-title">Pick Your <em>Battle Plan.</em></h2>
+  <div class="divider left"></div>
+  <p style="color:var(--muted);font-size:.97rem;line-height:1.85;max-width:620px;">Whether it's a weekend birthday battle or a full-blown neighbourhood war, we have a package to match. All packages include Nerf blasters and foam darts — just add your warriors.</p>
+
+  <div class="package-grid">
+
+    <!-- SILVER -->
+    <div class="pkg-card">
+      <div class="pkg-img">
+        <!-- Replace with: <img src="images/nerf-silver.jpg" alt="Silver Package" style="width:100%;height:100%;object-fit:cover;" /> -->
+        <span class="ph-icon">🎯</span>
+        <span class="ph-text">Photo Coming Soon</span>
+      </div>
+      <div class="pkg-tier">Silver Package</div>
+      <div class="pkg-name">The Recruit</div>
+      <div class="pkg-price">$60</div>
+      <div class="pkg-period">per weekend · DIY pick-up</div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li>Nerf blasters for a small group</li>
+        <li>Foam dart supply included</li>
+        <li>Easy setup guide included</li>
+        <li>Perfect for 6–10 players</li>
+        <li>Great for birthdays & small backyard battles</li>
+      </ul>
+      <button class="pkg-cta">Add to Cart — $60</button>
+    </div>
+
+    <!-- GOLD (featured) -->
+    <div class="pkg-card featured">
+      <div class="pkg-img">
+        <!-- Replace with: <img src="images/nerf-gold.jpg" alt="Gold Package" style="width:100%;height:100%;object-fit:cover;" /> -->
+        <span class="ph-icon" style="color:rgba(255,255,255,.3);">🎯</span>
+        <span class="ph-text">Photo Coming Soon</span>
+      </div>
+      <div class="pkg-tier">⭐ Gold Package — Most Popular</div>
+      <div class="pkg-name">The Commander</div>
+      <div class="pkg-price">$80</div>
+      <div class="pkg-period">per weekend · DIY pick-up</div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li>More blasters for bigger squads</li>
+        <li>Expanded foam dart supply</li>
+        <li>Team vests or accessories included</li>
+        <li>Ideal for 10–20 players</li>
+        <li>Perfect for birthday parties & family events</li>
+        <li>Easy setup guide included</li>
+      </ul>
+      <button class="pkg-cta">Add to Cart — $80</button>
+    </div>
+
+    <!-- PLATINUM -->
+    <div class="pkg-card">
+      <div class="pkg-img">
+        <!-- Replace with: <img src="images/nerf-platinum.jpg" alt="Platinum Package" style="width:100%;height:100%;object-fit:cover;" /> -->
+        <span class="ph-icon">🎯</span>
+        <span class="ph-text">Photo Coming Soon</span>
+      </div>
+      <div class="pkg-tier">Platinum Package</div>
+      <div class="pkg-name">The General</div>
+      <div class="pkg-price">$110</div>
+      <div class="pkg-period">per weekend · DIY pick-up</div>
+      <div class="pkg-divider"></div>
+      <ul class="pkg-features">
+        <li>Full arsenal — maximum blasters</li>
+        <li>Premium foam dart supply</li>
+        <li>Full team gear & accessories</li>
+        <li>Ideal for 20+ players</li>
+        <li>Perfect for team building & large events</li>
+        <li>Easy setup guide included</li>
+        <li>Everything you need for an epic all-day battle</li>
+      </ul>
+      <button class="pkg-cta">Add to Cart — $110</button>
+    </div>
+
+  </div>
+
+  <!-- ARTILLERY TRAILER FEATURE -->
+  <div class="artillery">
+    <div class="art-img">
+      <!-- Replace with: <img src="images/artillery-trailer.jpg" alt="Artillery Trailer" style="width:100%;height:100%;object-fit:cover;" /> -->
+      <span class="ph-icon" style="color:rgba(255,255,255,.3);">🚀</span>
+      <span style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.18);">Photo Coming Soon</span>
+    </div>
+    <div class="art-body">
+      <div class="art-eyebrow">✦ The Ultimate Add-On</div>
+      <h2>Artillery<br><em>Trailer</em></h2>
+      <p>Take your Nerf War to the next level. Our Artillery Trailer is a fully loaded mobile battle station that transforms any backyard or event space into a tactical warzone. Mount it, man it, and dominate the battlefield.</p>
+      <p>Perfect as a standalone event feature or as the ultimate upgrade to any Nerf War package. Guaranteed to stop the show.</p>
+      <div class="art-price">$500</div>
+      <div class="art-note">per day · DIY pick-up · ⚠️ Requires a pickup truck or cargo van</div>
+      <button class="art-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- VEHICLE WARNING -->
+  <div class="info-box dark-box" style="background:var(--navy);border-left:3px solid var(--gold);border-radius:0;">
+    <span class="ib-icon">⚠️</span>
+    <div>
+      <h4 style="color:var(--white);">Vehicle Requirement — Artillery Trailer</h4>
+      <p style="color:rgba(255,255,255,.6);">The Artillery Trailer requires a <strong style="color:var(--gold-lt);">pickup truck or full-size cargo van</strong> for transport. Please ensure you have the appropriate vehicle before booking this item. Standard packages (Silver, Gold, Platinum) can be carried in most passenger vehicles.</p>
+    </div>
+  </div>
+
+  <!-- DEPOSIT INFO -->
+  <div class="info-box">
+    <span class="ib-icon">💰</span>
+    <div>
+      <h4>Damage Deposit — DIY Rentals</h4>
+      <p>All DIY rentals require a fully refundable damage deposit at pickup. Your deposit is returned in full when equipment comes back in its original condition. Questions? Give us a call before your rental date.</p>
+    </div>
+  </div>
+
+</section>
+
+<div class="footer-links-bar">
+  <a href="index.html">Home</a><span class="pipe">|</span>
+  <a href="#">FAQ</a><span class="pipe">|</span>
+  <a href="#">Terms of Service</a><span class="pipe">|</span>
+  <a href="#">Privacy Policy</a><span class="pipe">|</span>
+  <a href="index.html#contact">Contact Us</a>
+</div>
+<footer>
+  <p>© 2025 Signature Celebrations Event Rentals · Milton, ON · All Rights Reserved</p>
+  <p style="margin-top:.5rem;">📞 (905) 670-0010 · sceventrentalsmilton@gmail.com</p>
+</footer>
+
+</body>
+</html>

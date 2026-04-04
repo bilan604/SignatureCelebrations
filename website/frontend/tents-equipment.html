@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tents & Party Equipment – Signature Celebrations Event Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--navy:#1a2744;--gold:#b8922a;--gold-lt:#d4aa50;--cream:#faf8f3;--white:#ffffff;--text:#2d2d2d;--muted:#6b6b6b;--border:rgba(184,146,42,0.25);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Lato',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden;}
+    img{display:block;max-width:100%;}
+    a{text-decoration:none;color:inherit;}
+    .section-label{font-family:'Cinzel',serif;letter-spacing:.25em;font-size:.7rem;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+    .divider{width:60px;height:2px;background:var(--gold);margin:1.25rem auto;}
+    .divider.left{margin-left:0;}
+    .btn-primary{display:inline-block;padding:.85rem 2.4rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s,transform .2s;}
+    .btn-primary:hover{background:var(--navy);transform:translateY(-2px);}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4%;background:rgba(26,39,68,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,146,42,.2);}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;}
+    .nav-brand{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.15em;color:var(--cream);text-transform:uppercase;line-height:1.4;}
+    .nav-brand span{display:block;color:var(--gold);font-size:.65rem;letter-spacing:.25em;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);transition:color .2s;}
+    .nav-links a:hover{color:var(--gold);}
+    .nav-cta{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.6rem;border:1px solid var(--gold);color:var(--gold);cursor:pointer;transition:background .2s,color .2s;}
+    .nav-cta:hover{background:var(--gold);color:#fff;}
+
+    .page-hero{background:var(--navy);padding:140px 5% 70px;position:relative;overflow:hidden;}
+    .page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(184,146,42,.07) 0%,transparent 70%);pointer-events:none;}
+    .page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,146,42,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,42,.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+    .page-hero-inner{max-width:1280px;margin:0 auto;position:relative;}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.25rem;}
+    .breadcrumb a{color:var(--gold-lt);}
+    .breadcrumb span{margin:0 .5rem;}
+    .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.5rem);font-weight:300;color:var(--white);line-height:1.08;margin-bottom:1rem;}
+    .page-hero h1 em{font-style:italic;color:var(--gold-lt);}
+    .hero-desc{font-size:1rem;color:rgba(255,255,255,.6);max-width:600px;line-height:1.85;font-weight:300;}
+    .delivery-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.25rem;padding:.55rem 1.2rem;background:rgba(184,146,42,.12);border:1px solid rgba(184,146,42,.4);font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-lt);}
+
+    .products-section{padding:6rem 5%;max-width:1280px;margin:0 auto;}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--navy);margin-bottom:.5rem;}
+    .section-title em{font-style:italic;color:var(--gold);}
+
+    /* FEATURED TENT */
+    .tent-feature{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);overflow:hidden;margin-top:2.5rem;}
+    .tent-img{aspect-ratio:1/1;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;}
+    .ph-icon{font-size:3.5rem;opacity:.3;}
+    .ph-text{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.22);}
+    .tent-body{padding:3rem 2.5rem;background:var(--white);display:flex;flex-direction:column;justify-content:center;}
+    .tent-body .eyebrow{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+    .tent-body h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--navy);line-height:1.15;margin-bottom:1rem;}
+    .tent-body h2 em{font-style:italic;color:var(--gold);}
+    .tent-body p{font-size:.92rem;color:var(--muted);line-height:1.85;margin-bottom:.75rem;}
+    .tent-price{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--navy);margin:1rem 0 .25rem;}
+    .tent-note{font-size:.78rem;color:var(--muted);margin-bottom:1.5rem;font-style:italic;}
+    .tent-specs{list-style:none;margin-bottom:1.5rem;}
+    .tent-specs li{display:flex;align-items:baseline;gap:.7rem;font-size:.87rem;color:var(--muted);padding:.4rem 0;border-bottom:1px solid rgba(0,0,0,.05);}
+    .tent-specs li::before{content:'✦';color:var(--gold);font-size:.6rem;flex-shrink:0;}
+    .add-to-cart{display:inline-block;padding:.8rem 2.4rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;}
+    .add-to-cart:hover{background:var(--navy);}
+
+    /* TABLES & CHAIRS */
+    .tc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem;}
+    .tc-card{background:var(--white);border:1px solid var(--border);transition:border-color .3s,transform .3s,box-shadow .3s;display:flex;flex-direction:column;}
+    .tc-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 8px 32px rgba(184,146,42,.1);}
+    .tc-img{aspect-ratio:1/1;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;}
+    .tc-body{padding:1.75rem;flex:1;display:flex;flex-direction:column;}
+    .tc-body h3{font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:.5rem;}
+    .tc-body p{font-size:.87rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;flex:1;}
+    .tc-price{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--navy);margin-bottom:.15rem;}
+    .tc-price-note{font-size:.75rem;color:var(--muted);margin-bottom:1rem;font-style:italic;}
+    .qty-row{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;}
+    .qty-label{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);}
+    .qty-input{width:70px;padding:.5rem .75rem;border:1px solid var(--border);font-family:'Lato',sans-serif;font-size:.9rem;color:var(--navy);background:var(--cream);outline:none;}
+    .qty-input:focus{border-color:var(--gold);}
+    .tc-cart{width:100%;padding:.75rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;}
+    .tc-cart:hover{background:var(--navy);}
+
+    /* BUNDLE */
+    .bundle-box{background:var(--navy);padding:3rem 2.5rem;margin-top:4rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;border-left:4px solid var(--gold);}
+    .bundle-box h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--white);margin-bottom:.5rem;}
+    .bundle-box h3 em{font-style:italic;color:var(--gold-lt);}
+    .bundle-box p{font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.8;}
+    .bundle-cta{padding:1rem 2.4rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;white-space:nowrap;}
+    .bundle-cta:hover{background:var(--gold-lt);}
+
+    /* INFO */
+    .info-box{background:rgba(184,146,42,.06);border:1px solid var(--border);padding:2.25rem 2rem;margin-top:3rem;display:flex;align-items:flex-start;gap:1.25rem;}
+    .ib-icon{font-size:1.5rem;flex-shrink:0;}
+    .info-box h4{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);margin-bottom:.4rem;}
+    .info-box p{font-size:.87rem;color:var(--muted);line-height:1.7;}
+
+    .footer-links-bar{background:var(--navy);padding:2rem 5%;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(184,146,42,.15);}
+    .footer-links-bar a{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .2s;}
+    .footer-links-bar a:hover{color:var(--gold);}
+    .footer-links-bar .pipe{color:rgba(255,255,255,.2);}
+    footer{background:#0f1929;padding:3rem 5%;text-align:center;}
+    footer p{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.3);text-transform:uppercase;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .fade-up{animation:fadeUp .7s ease both;}
+
+    @media(max-width:900px){.tent-feature,.tc-grid{grid-template-columns:1fr;}.nav-links{display:none;}.bundle-box{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,146,42,.15);border:1.5px solid rgba(184,146,42,.35);display:flex;align-items:center;justify-content:center;">
+      <span style="font-family:'Cinzel',serif;color:var(--gold);font-size:.8rem;font-weight:700;">SC</span>
+    </div>
+    <div class="nav-brand">Signature Celebrations<span>Event Rentals</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inflatables.html">Inflatables</a></li>
+    <li><a href="tents-equipment.html" style="color:var(--gold);">Tents & Equipment</a></li>
+    <li><a href="nerf-wars.html">Nerf Wars</a></li>
+    <li><a href="stag-and-doe.html">Stag & Doe</a></li>
+    <li><a href="snack-machines.html">Snacks</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Get a Quote</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-inner fade-up">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Tents & Party Equipment</div>
+    <h1>Host Rain<br>or <em>Shine.</em></h1>
+    <p class="hero-desc">Give your guests a beautiful, sheltered space no matter the forecast. Our 20×40 event tent combined with our table and chair rentals turns any backyard or lot into a full venue — professionally delivered and set up by our team.</p>
+    <div class="delivery-badge">🚛 Tent Includes Professional Delivery, Setup & Teardown</div>
+  </div>
+</section>
+
+<section class="products-section">
+
+  <!-- 20x40 TENT -->
+  <p class="section-label">Signature Tent</p>
+  <h2 class="section-title">The <em>20×40 Event Tent</em></h2>
+  <div class="divider left"></div>
+
+  <div class="tent-feature">
+    <div class="tent-img">
+      <!-- Replace with: <img src="images/event-tent.jpg" alt="20x40 Event Tent" style="width:100%;height:100%;object-fit:cover;" /> -->
+      <span class="ph-icon">⛺</span>
+      <span class="ph-text">Photo Coming Soon</span>
+    </div>
+    <div class="tent-body">
+      <div class="eyebrow">✦ Full-Service Rental</div>
+      <h2>800 sq ft of<br><em>Covered Celebration.</em></h2>
+      <p>Our commercial-grade 20×40 event tent provides 800 square feet of beautiful, weather-protected space for your guests. Whether it's an outdoor birthday, a backyard reception, or a summer fundraiser — this tent transforms any open space into a proper venue.</p>
+      <p>Setup and teardown are fully handled by our team. You plan the party; we'll build the space.</p>
+      <ul class="tent-specs">
+        <li>800 sq ft of coverage (20 ft × 40 ft)</li>
+        <li>Commercial-grade frame and canopy</li>
+        <li>Suitable for up to ~80 guests seated</li>
+        <li>Weather-resistant — ideal for all seasons</li>
+        <li>Professional delivery, install & removal included</li>
+      </ul>
+      <div class="tent-price">$800</div>
+      <div class="tent-note">per event · delivery & setup included</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- TABLES & CHAIRS -->
+  <div style="margin-top:5rem;">
+    <p class="section-label">Furniture Rentals</p>
+    <h2 class="section-title">Tables &amp; <em>Chairs.</em></h2>
+    <div class="divider left"></div>
+    <p style="color:var(--muted);font-size:.97rem;line-height:1.85;max-width:640px;">Complete your venue setup with our affordable table and chair rentals. Order the exact quantity you need — these are DIY pickup items, so you grab what you need and drop them off when the fun is done.</p>
+
+    <div class="tc-grid">
+      <!-- Tables -->
+      <div class="tc-card">
+        <div class="tc-img">
+          <!-- Replace with: <img src="images/tables.jpg" alt="Folding Tables" style="width:100%;height:100%;object-fit:cover;" /> -->
+          <span class="ph-icon">🪑</span>
+          <span class="ph-text" style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.22);">Photo Coming Soon</span>
+        </div>
+        <div class="tc-body">
+          <h3>Folding Tables</h3>
+          <p>Sturdy, commercial-quality folding tables suitable for dining, buffet setups, games, or display. Available in the quantity you need for your event.</p>
+          <div class="tc-price">$12</div>
+          <div class="tc-price-note">per table / per day · DIY pick-up</div>
+          <div class="qty-row">
+            <span class="qty-label">Quantity:</span>
+            <input class="qty-input" type="number" min="1" value="1" />
+          </div>
+          <button class="tc-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Chairs -->
+      <div class="tc-card">
+        <div class="tc-img">
+          <!-- Replace with: <img src="images/chairs.jpg" alt="Folding Chairs" style="width:100%;height:100%;object-fit:cover;" /> -->
+          <span class="ph-icon">🪑</span>
+          <span class="ph-text" style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.22);">Photo Coming Soon</span>
+        </div>
+        <div class="tc-body">
+          <h3>Folding Chairs</h3>
+          <p>Clean, reliable folding chairs for every guest. Ideal for outdoor or indoor events — pair with our tables for a complete seated setup your guests will be comfortable in all day.</p>
+          <div class="tc-price">$2</div>
+          <div class="tc-price-note">per chair / per day · DIY pick-up</div>
+          <div class="qty-row">
+            <span class="qty-label">Quantity:</span>
+            <input class="qty-input" type="number" min="1" value="1" />
+          </div>
+          <button class="tc-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUNDLE SUGGESTION -->
+  <div class="bundle-box">
+    <div>
+      <h3>Build the <em>Complete Package.</em></h3>
+      <p>Pair the 20×40 tent with tables and chairs for a fully furnished outdoor venue. Add an inflatable, Nerf War package, or snack machines to make it a true signature celebration. Contact us to build a custom bundle.</p>
+    </div>
+    <a href="index.html#contact"><button class="bundle-cta">Build My Package</button></a>
+  </div>
+
+  <!-- DIY INFO -->
+  <div class="info-box">
+    <span class="ib-icon">📦</span>
+    <div>
+      <h4>Tables & Chairs — DIY Pick-Up</h4>
+      <p>Tables and chairs are available for self-pickup. A fully refundable damage deposit is collected at the time of pickup and returned when items come back in their original condition. Be sure you have a vehicle large enough to transport your order — a minivan, SUV, or truck works well for larger quantities.</p>
+    </div>
+  </div>
+
+</section>
+
+<div class="footer-links-bar">
+  <a href="index.html">Home</a><span class="pipe">|</span>
+  <a href="#">FAQ</a><span class="pipe">|</span>
+  <a href="#">Terms of Service</a><span class="pipe">|</span>
+  <a href="#">Privacy Policy</a><span class="pipe">|</span>
+  <a href="index.html#contact">Contact Us</a>
+</div>
+<footer>
+  <p>© 2025 Signature Celebrations Event Rentals · Milton, ON · All Rights Reserved</p>
+  <p style="margin-top:.5rem;">📞 (905) 670-0010 · sceventrentalsmilton@gmail.com</p>
+</footer>
+
+</body>
+</html>
