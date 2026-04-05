@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Signature Celebrations Event Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#1a2744; --gold:#b8922a; --gold-lt:#d4aa50; --cream:#faf8f3; --white:#ffffff; --text:#2d2d2d; --muted:#6b6b6b; --border:rgba(184,146,42,0.25); }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Lato',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;}
+
+    .section-label{font-family:'Cinzel',serif;letter-spacing:.25em;font-size:.7rem;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+    .divider{width:60px;height:2px;background:var(--gold);margin:1.25rem auto;}
+    .divider.left{margin-left:0;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4%;background:rgba(26,39,68,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,146,42,.2);}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;}
+    .nav-brand{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.15em;color:var(--cream);text-transform:uppercase;line-height:1.4;}
+    .nav-brand span{display:block;color:var(--gold);font-size:.65rem;letter-spacing:.25em;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);transition:color .2s;}
+    .nav-links a:hover{color:var(--gold);}
+    .nav-cta{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.6rem;border:1px solid var(--gold);color:var(--gold);cursor:pointer;transition:background .2s,color .2s;}
+    .nav-cta:hover{background:var(--gold);color:#fff;}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:140px 5% 70px;position:relative;overflow:hidden;}
+    .page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(184,146,42,.07) 0%,transparent 70%);pointer-events:none;}
+    .page-hero-inner{max-width:1280px;margin:0 auto;position:relative;}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.25rem;}
+    .breadcrumb a{color:var(--gold-lt);transition:color .2s;}
+    .breadcrumb span{margin:0 .5rem;}
+    .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.5rem);font-weight:300;color:var(--white);line-height:1.08;}
+    .page-hero h1 em{font-style:italic;color:var(--gold-lt);}
+
+    /* CONTACT SECTION */
+    .contact{padding:6rem 5%;}
+    .contact-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;}
+    .contact-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--navy);line-height:1.15;margin-bottom:.75rem;}
+    .contact-text h2 em{font-style:italic;color:var(--gold);}
+    .contact-text p{color:var(--muted);line-height:1.85;font-size:.97rem;margin-bottom:2.5rem;}
+    .contact-details{display:flex;flex-direction:column;gap:1rem;}
+    .contact-item{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:var(--white);border:1px solid var(--border);transition:border-color .2s;}
+    .contact-item:hover{border-color:var(--gold);}
+    .contact-item .ci-icon{font-size:1.2rem;flex-shrink:0;}
+    .contact-item .ci-label{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.15rem;}
+    .contact-item .ci-value{font-size:.9rem;color:var(--navy);font-weight:700;}
+    .contact-social{margin-top:1.5rem;display:flex;gap:1rem;}
+    .social-pill{padding:.6rem 1.4rem;border:1px solid var(--border);font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);display:flex;align-items:center;gap:.5rem;transition:border-color .2s,background .2s;}
+    .social-pill:hover{border-color:var(--gold);background:rgba(184,146,42,.05);}
+
+    .contact-form-box{background:var(--navy);padding:2.5rem 2rem;}
+    .contact-form-box h3{font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--white);margin-bottom:1.75rem;}
+    .form-group{margin-bottom:1.25rem;}
+    .form-group label{display:block;font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.5rem;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(184,146,42,.2);color:var(--white);padding:.75rem 1rem;font-family:'Lato',sans-serif;font-size:.9rem;outline:none;transition:border-color .2s;}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.25);}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+    .form-group select option{background:var(--navy);}
+    .form-group textarea{resize:vertical;min-height:90px;}
+    .form-submit{width:100%;padding:.9rem;background:var(--gold);color:var(--white);font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background .25s;}
+    .form-submit:hover{background:var(--gold-lt);}
+
+    /* FOOTER */
+    .footer-links-bar{background:var(--navy);padding:2rem 5%;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(184,146,42,.15);}
+    .footer-links-bar a{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .2s;}
+    .footer-links-bar a:hover{color:var(--gold);}
+    .footer-links-bar .pipe{color:rgba(255,255,255,.2);}
+    footer{background:#0f1929;padding:3rem 5%;text-align:center;}
+    footer p{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.3);text-transform:uppercase;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .fade-up{animation:fadeUp .7s ease both;}
+    @media(max-width:900px){.nav-links{display:none;}.contact-inner{grid-template-columns:1fr;gap:2.5rem;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,146,42,.15);border:1.5px solid rgba(184,146,42,.35);display:flex;align-items:center;justify-content:center;">
+      <span style="font-family:'Cinzel',serif;color:var(--gold);font-size:.8rem;font-weight:700;">SC</span>
+    </div>
+    <div class="nav-brand">Signature Celebrations<span>Event Rentals</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inflatables.html">Inflatables</a></li>
+    <li><a href="tents-equipment.html">Tents & Equipment</a></li>
+    <li><a href="nerf-wars.html">Nerf Wars</a></li>
+    <li><a href="stag-and-doe.html">Stag & Doe</a></li>
+    <li><a href="snack-machines.html">Snacks</a></li>
+  </ul>
+  <a href="contact-us.html" class="nav-cta">Get a Quote</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner fade-up">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Contact Us</div>
+    <h1>Get in <em>Touch.</em></h1>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact-inner">
+      <div>
+        <p class="section-label">Get In Touch</p>
+        <h2>Have Questions?<br><em>We Have Answers.</em></h2>
+        <div class="divider left"></div>
+        <p>Can't find what you're looking for or curious about one of our products? Don't hesitate to reach out — we're
+          happy to help you build the perfect package for your event.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <span class="ci-label">Phone</span>
+              <span class="ci-value">+1 (905) 670-0010</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">✉️</span>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-value"><a href="mailto:sceventrentalsmilton@gmail.com">sceventrentalsmilton@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <span class="ci-label">Serving</span>
+              <span class="ci-value">Milton &amp; Surrounding Areas</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://instagram.com/sc.eventrentals" target="_blank" class="social-pill">
+            📸 Instagram
+          </a>
+          <a href="https://facebook.com/sc.eventrentals" target="_blank" class="social-pill">
+            👍 Facebook
+          </a>
+        </div>
+      </div>
+      <!-- Quick Enquiry Form -->
+      <div class="contact-form-box">
+        <h3>Quick Enquiry</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Jane Smith" />
+        </div>
+        <div class="form-group">
+          <label>Phone or Email</label>
+          <input type="text" placeholder="(905) 555-0123" />
+        </div>
+        <div class="form-group">
+          <label>Event Date</label>
+          <input type="date" />
+        </div>
+        <div class="form-group">
+          <label>I'm Interested In</label>
+          <select>
+            <option value="">Select a rental category…</option>
+            <option>Inflatables / Bouncy Castle</option>
+            <option>Inflatable Night Club</option>
+            <option>Event Tent &amp; Furniture</option>
+            <option>Nerf Wars Package</option>
+            <option>Stag &amp; Doe Games</option>
+            <option>Snack Machines</option>
+            <option>Multiple / Full Package</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message (Optional)</label>
+          <textarea placeholder="Tell us a little about your event…"></textarea>
+        </div>
+        <button class="form-submit">Send Enquiry →</button>
+      </div>
+    </div>
+</section>
+
+<div class="footer-links-bar">
+  <a href="index.html">Home</a><span class="pipe">|</span>
+  <a href="faq.html">FAQ</a><span class="pipe">|</span>
+  <a href="terms-of-service.html">Terms of Service</a><span class="pipe">|</span>
+  <a href="privacy-policy.html">Privacy Policy</a><span class="pipe">|</span>
+  <a href="contact-us.html" style="color:var(--gold);">Contact Us</a>
+</div>
+<footer>
+  <p>© 2025 Signature Celebrations Event Rentals · Milton, ON · All Rights Reserved</p>
+  <p style="margin-top:.5rem;">📞 (905) 670-0010 · sceventrentalsmilton@gmail.com</p>
+</footer>
+
+</body>
+</html>

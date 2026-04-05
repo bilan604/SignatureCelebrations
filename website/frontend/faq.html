@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ – Signature Celebrations Event Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#1a2744; --gold:#b8922a; --gold-lt:#d4aa50; --cream:#faf8f3; --white:#ffffff; --text:#2d2d2d; --muted:#6b6b6b; --border:rgba(184,146,42,0.25); }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Lato',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;}
+
+    .section-label{font-family:'Cinzel',serif;letter-spacing:.25em;font-size:.7rem;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
+    .divider{width:60px;height:2px;background:var(--gold);margin:1.25rem auto;}
+    .divider.left{margin-left:0;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4%;background:rgba(26,39,68,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,146,42,.2);}
+    .nav-logo{display:flex;align-items:center;gap:.8rem;}
+    .nav-brand{font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.15em;color:var(--cream);text-transform:uppercase;line-height:1.4;}
+    .nav-brand span{display:block;color:var(--gold);font-size:.65rem;letter-spacing:.25em;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);transition:color .2s;}
+    .nav-links a:hover{color:var(--gold);}
+    .nav-cta{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.6rem;border:1px solid var(--gold);color:var(--gold);cursor:pointer;transition:background .2s,color .2s;}
+    .nav-cta:hover{background:var(--gold);color:#fff;}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:140px 5% 70px;position:relative;overflow:hidden;}
+    .page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(184,146,42,.07) 0%,transparent 70%);pointer-events:none;}
+    .page-hero-inner{max-width:1280px;margin:0 auto;position:relative;}
+    .breadcrumb{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.25rem;}
+    .breadcrumb a{color:var(--gold-lt);transition:color .2s;}
+    .breadcrumb span{margin:0 .5rem;}
+    .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.5rem);font-weight:300;color:var(--white);line-height:1.08;}
+    .page-hero h1 em{font-style:italic;color:var(--gold-lt);}
+
+    /* CONTENT */
+    .faq-section{padding:6rem 5%;max-width:1000px;margin:0 auto;}
+    .faq-item{margin-bottom:2.5rem;background:var(--white);padding:2rem;border:1px solid var(--border);transition:border-color .3s;}
+    .faq-item:hover{border-color:var(--gold);}
+    .faq-question{font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:1rem;display:flex;gap:1rem;align-items:flex-start;}
+    .faq-question span{color:var(--gold);font-weight:700;}
+    .faq-answer{font-size:.95rem;color:var(--muted);line-height:1.8;padding-left:2.2rem;}
+
+    /* FOOTER */
+    .footer-links-bar{background:var(--navy);padding:2rem 5%;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(184,146,42,.15);}
+    .footer-links-bar a{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .2s;}
+    .footer-links-bar a:hover{color:var(--gold);}
+    .footer-links-bar .pipe{color:rgba(255,255,255,.2);}
+    footer{background:#0f1929;padding:3rem 5%;text-align:center;}
+    footer p{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.3);text-transform:uppercase;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .fade-up{animation:fadeUp .7s ease both;}
+    @media(max-width:900px){.nav-links{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <div style="width:48px;height:48px;border-radius:50%;background:rgba(184,146,42,.15);border:1.5px solid rgba(184,146,42,.35);display:flex;align-items:center;justify-content:center;">
+      <span style="font-family:'Cinzel',serif;color:var(--gold);font-size:.8rem;font-weight:700;">SC</span>
+    </div>
+    <div class="nav-brand">Signature Celebrations<span>Event Rentals</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="inflatables.html">Inflatables</a></li>
+    <li><a href="tents-equipment.html">Tents & Equipment</a></li>
+    <li><a href="nerf-wars.html">Nerf Wars</a></li>
+    <li><a href="stag-and-doe.html">Stag & Doe</a></li>
+    <li><a href="snack-machines.html">Snacks</a></li>
+  </ul>
+  <a href="contact-us.html" class="nav-cta">Get a Quote</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner fade-up">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span>FAQ</div>
+    <h1>Frequently Asked <em>Questions.</em></h1>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="faq-item">
+    <div class="faq-question"><span>Q.</span> What areas do you serve?</div>
+    <div class="faq-answer">We are based in Milton, Ontario, and primarily serve Milton, Oakville, Burlington, and Mississauga. Delivery fees vary based on distance. Please contact us for a specific quote for your location.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question"><span>Q.</span> Is a deposit required for bookings?</div>
+    <div class="faq-answer">Yes, we require a booking deposit to secure your date. For DIY rentals, we also collect a fully refundable damage deposit at the time of pickup, which is returned once the equipment is inspected and confirmed to be in its original condition.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question"><span>Q.</span> What happens if it rains on the day of my event?</div>
+    <div class="faq-answer">Safety is our top priority. Inflatables cannot be operated in heavy rain or high winds. We offer flexible rescheduling options in the event of inclement weather. Please review our Weather Policy in the Terms of Service for full details.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question"><span>Q.</span> How much space is needed for a bouncy castle?</div>
+    <div class="faq-answer">Each unit has different dimensions. As a general rule, we require at least 5 feet of clearance around all sides of the inflatable and a clear path for delivery. The setup area must be flat and free of debris or overhead obstructions like tree branches.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question"><span>Q.</span> Do you provide supervision for the rentals?</div>
+    <div class="faq-answer">Our standard rental rates do not include supervision. The customer is responsible for providing a competent adult attendant to supervise the equipment at all times. Professional attendants can be hired for an additional fee upon request.</div>
+  </div>
+</section>
+
+<div class="footer-links-bar">
+  <a href="index.html">Home</a><span class="pipe">|</span>
+  <a href="faq.html" style="color:var(--gold);">FAQ</a><span class="pipe">|</span>
+  <a href="terms-of-service.html">Terms of Service</a><span class="pipe">|</span>
+  <a href="privacy-policy.html">Privacy Policy</a><span class="pipe">|</span>
+  <a href="contact-us.html">Contact Us</a>
+</div>
+<footer>
+  <p>© 2025 Signature Celebrations Event Rentals · Milton, ON · All Rights Reserved</p>
+  <p style="margin-top:.5rem;">📞 (905) 670-0010 · sceventrentalsmilton@gmail.com</p>
+</footer>
+
+</body>
+</html>
