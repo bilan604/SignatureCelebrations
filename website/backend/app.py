@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
+import uvicorn
 
 app = FastAPI()
 
@@ -31,6 +32,22 @@ async def read_nerf_wars():
 @app.get("/snack-machines")
 async def read_snack_machines():
     return FileResponse(os.path.join(FRONTEND_DIR, "snack-machines.html"))
+
+@app.get("/faq")
+async def read_faq():
+    return FileResponse(os.path.join(FRONTEND_DIR, "faq.html"))
+
+@app.get("/terms-of-service")
+async def read_terms_of_service():
+    return FileResponse(os.path.join(FRONTEND_DIR, "terms-of-service.html"))
+
+@app.get("/privacy-policy")
+async def read_privacy_policy():
+    return FileResponse(os.path.join(FRONTEND_DIR, "privacy-policy.html"))
+
+@app.get("/contact-us")
+async def read_contact_us():
+    return FileResponse(os.path.join(FRONTEND_DIR, "contact-us.html"))
 
 
 app.mount("/", StaticFiles(directory="website/frontend", html=False), name="frontend")
