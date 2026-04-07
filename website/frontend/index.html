@@ -323,7 +323,7 @@
       padding: 1.5rem 1.25rem;
       text-align: center;
       transition: transform .3s, border-color .3s;
-      cursor: default;
+      cursor: pointer;
     }
 
     .hero-card:hover {
@@ -531,11 +531,12 @@
     }
 
     .service-card {
+      display: block;
       background: rgba(255, 255, 255, .03);
       border: 1px solid rgba(184, 146, 42, .15);
       padding: 2.5rem 2rem;
       transition: background .3s, border-color .3s, transform .3s;
-      cursor: default;
+      cursor: pointer;
     }
 
     .service-card:hover {
@@ -1086,6 +1087,10 @@
         gap: 2.5rem;
       }
 
+      .hero-inner {
+        padding-top: 150px;
+      }
+
       .services-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -1104,10 +1109,25 @@
 
       nav {
         padding: .75rem 4%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .nav-brand span {
+        display: none;
       }
 
       .nav-links {
-        display: none;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        order: 3;
+        padding-top: .5rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        font-size: .65rem;
       }
     }
 
@@ -1173,32 +1193,32 @@
       </div>
       <div class="hero-visual">
         <div class="hero-card-grid">
-          <div class="hero-card featured">
+          <a href="inflatables.html" class="hero-card featured">
             <div class="icon">🏰</div>
             <h4>Inflatables</h4>
             <p>Commercial-grade bouncy castles & inflatable night clubs — sanitized, safe, and ready for hours of fun.
             </p>
-          </div>
-          <div class="hero-card">
+          </a>
+          <a href="nerf-wars.html" class="hero-card">
             <div class="icon">🎯</div>
             <h4>Nerf Wars</h4>
             <p>Silver, Gold & Platinum battle packages for all ages.</p>
-          </div>
-          <div class="hero-card">
+          </a>
+          <a href="tents-equipment.html" class="hero-card">
             <div class="icon">🎪</div>
             <h4>Party Tents</h4>
             <p>20×40 event tents, tables & chairs delivered & set up.</p>
-          </div>
-          <div class="hero-card">
+          </a>
+          <a href="snack-machines.html" class="hero-card">
             <div class="icon">🍿</div>
             <h4>Snack Machines</h4>
             <p>Cotton candy, popcorn & snow cones for the full carnival vibe.</p>
-          </div>
-          <div class="hero-card">
+          </a>
+          <a href="stag-and-doe.html" class="hero-card">
             <div class="icon">🎲</div>
             <h4>Stag & Doe Games</h4>
             <p>Skeeball, poker tables, prize wheels & more.</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -1287,47 +1307,47 @@
       </div>
       <div class="services-grid">
 
-        <div class="service-card wide">
+        <a href="inflatables.html" class="service-card wide">
           <div class="s-icon">🏰</div>
           <h3>Inflatables</h3>
           <p>Bring the wow factor with our crowd-favourite inflatables. From classic bouncy castles to a full inflatable
             night club experience — these are guaranteed to be the centre of attention. All units are sanitized upon
             setup and built to commercial safety standards.</p>
           <span class="service-tag delivery">🚛 Includes Delivery & Setup</span>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="tents-equipment.html" class="service-card">
           <div class="s-icon">⛺</div>
           <h3>Tents & Party Equipment</h3>
           <p>Host rain or shine with our 20×40 event tent. Add tables and chairs for a complete outdoor venue setup —
             professional delivery and installation included.</p>
           <span class="service-tag delivery">🚛 Includes Delivery & Setup</span>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="nerf-wars.html" class="service-card">
           <div class="s-icon">🎯</div>
           <h3>Nerf Wars</h3>
           <p>Turn your party into a full-on battle zone. Choose from Silver, Gold, or Platinum packages — the ultimate
             tactical experience for kids, teens, and adults alike.</p>
           <span class="service-tag">📦 DIY Pick-Up Available</span>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="stag-and-doe.html" class="service-card">
           <div class="s-icon">🎲</div>
           <h3>Stag & Doe Rentals</h3>
           <p>Keep the crowd engaged and energy high all night. Our curated selection of fundraiser-ready games —
             skeeball, poker tables, prize wheels, raffle wheels, and more — are classic crowd-pleasers built for social
             events.</p>
           <span class="service-tag">📦 DIY Pick-Up Available</span>
-        </div>
+        </a>
 
-        <div class="service-card">
+        <a href="snack-machines.html" class="service-card">
           <div class="s-icon">🍭</div>
           <h3>Snack Machines</h3>
           <p>No party is complete without treats. Add cotton candy, movie-theatre popcorn, or snow cones to create that
             authentic carnival vibe. Materials included — just bring the excitement.</p>
           <span class="service-tag">📦 DIY Pick-Up Available</span>
-        </div>
+        </a>
 
       </div>
     </div>

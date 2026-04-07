@@ -1,0 +1,291 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]: SC
+      - generic [ref=e6]:
+        - text: Signature Celebrations
+        - generic [ref=e7]: Event Rentals
+    - list [ref=e8]:
+      - listitem [ref=e9]:
+        - link "Inflatables" [ref=e10] [cursor=pointer]:
+          - /url: inflatables.html
+      - listitem [ref=e11]:
+        - link "Tents" [ref=e12] [cursor=pointer]:
+          - /url: tents-equipment.html
+      - listitem [ref=e13]:
+        - link "Nerf Wars" [ref=e14] [cursor=pointer]:
+          - /url: nerf-wars.html
+      - listitem [ref=e15]:
+        - link "Stag & Doe" [ref=e16] [cursor=pointer]:
+          - /url: stag-and-doe.html
+      - listitem [ref=e17]:
+        - link "Snacks" [ref=e18] [cursor=pointer]:
+          - /url: snack-machines.html
+      - listitem [ref=e19]:
+        - link "Contact" [ref=e20] [cursor=pointer]:
+          - /url: contact-us.html
+    - link "View Packages" [ref=e21] [cursor=pointer]:
+      - /url: "#services"
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Signature Celebrations Event Rentals
+        - heading "Make Your Party Unforgettable." [level=1] [ref=e26]:
+          - text: Make Your Party
+          - emphasis [ref=e27]: Unforgettable.
+        - paragraph [ref=e28]: "Big fun. Better memories. Signature style. Stress-free event rentals with everything you need to host an epic party: from inflatables to Nerf battles and classic games."
+        - paragraph [ref=e29]: ✦ Affordable DIY pick-up options available
+        - generic [ref=e30]:
+          - link "Browse Rentals" [ref=e31] [cursor=pointer]:
+            - /url: "#services"
+          - link "Get a Quote" [ref=e32] [cursor=pointer]:
+            - /url: contact-us.html
+      - generic [ref=e34]:
+        - link "🏰 Inflatables Commercial-grade bouncy castles & inflatable night clubs — sanitized, safe, and ready for hours of fun." [ref=e35] [cursor=pointer]:
+          - /url: inflatables.html
+          - generic [ref=e36]: 🏰
+          - heading "Inflatables" [level=4] [ref=e37]
+          - paragraph [ref=e38]: Commercial-grade bouncy castles & inflatable night clubs — sanitized, safe, and ready for hours of fun.
+        - link "🎯 Nerf Wars Silver, Gold & Platinum battle packages for all ages." [ref=e39] [cursor=pointer]:
+          - /url: nerf-wars.html
+          - generic [ref=e40]: 🎯
+          - heading "Nerf Wars" [level=4] [ref=e41]
+          - paragraph [ref=e42]: Silver, Gold & Platinum battle packages for all ages.
+        - link "🎪 Party Tents 20×40 event tents, tables & chairs delivered & set up." [ref=e43] [cursor=pointer]:
+          - /url: tents-equipment.html
+          - generic [ref=e44]: 🎪
+          - heading "Party Tents" [level=4] [ref=e45]
+          - paragraph [ref=e46]: 20×40 event tents, tables & chairs delivered & set up.
+        - link "🍿 Snack Machines Cotton candy, popcorn & snow cones for the full carnival vibe." [ref=e47] [cursor=pointer]:
+          - /url: snack-machines.html
+          - generic [ref=e48]: 🍿
+          - heading "Snack Machines" [level=4] [ref=e49]
+          - paragraph [ref=e50]: Cotton candy, popcorn & snow cones for the full carnival vibe.
+        - link "🎲 Stag & Doe Games Skeeball, poker tables, prize wheels & more." [ref=e51] [cursor=pointer]:
+          - /url: stag-and-doe.html
+          - generic [ref=e52]: 🎲
+          - heading "Stag & Doe Games" [level=4] [ref=e53]
+          - paragraph [ref=e54]: Skeeball, poker tables, prize wheels & more.
+    - generic [ref=e55]:
+      - img [ref=e56]
+      - text: Scroll
+  - generic [ref=e58]:
+    - generic [ref=e59]: 🎉 Birthday Parties
+    - generic [ref=e61]: 🏡 Backyard BBQs
+    - generic [ref=e63]: 🎯 Family Battles
+    - generic [ref=e65]: 🤝 Team Building
+    - generic [ref=e67]: 💍 Stag & Does
+    - generic [ref=e69]: 🏕️ Indoor & Outdoor
+  - generic [ref=e70]:
+    - generic [ref=e71]:
+      - paragraph [ref=e72]: Why Choose Us
+      - heading "One Call. Zero Stress. Epic Results." [level=2] [ref=e73]:
+        - text: One Call.
+        - emphasis [ref=e74]: Zero Stress.
+        - text: Epic Results.
+      - paragraph [ref=e76]: We know planning a party can feel overwhelming. That's why Signature Celebrations exists — to take the heavy lifting off your plate so you can focus on the moments that actually matter.
+      - paragraph [ref=e77]: From the moment you book to the moment we pack up, our team handles everything. No chasing five different vendors. No guesswork. Just one trusted partner who shows up, sets up, and delivers a celebration worth remembering.
+      - link "Start Planning" [ref=e78] [cursor=pointer]:
+        - /url: contact-us.html
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]: 🏆
+        - generic [ref=e82]:
+          - heading "Commercial Grade Quality" [level=4] [ref=e83]
+          - paragraph [ref=e84]: Our bouncy castles and event tents are built to commercial safety and durability standards - clean, inspected, and ready for the big day.
+      - generic [ref=e85]:
+        - generic [ref=e86]: 🚛
+        - generic [ref=e87]:
+          - heading "Stress-Free Full Service" [level=4] [ref=e88]
+          - paragraph [ref=e89]: For inflatables and event tents, we handle professional delivery, setup, and teardown. You don't lift a finger.
+      - generic [ref=e90]:
+        - generic [ref=e91]: 💰
+        - generic [ref=e92]:
+          - heading "Flexible DIY Savings" [level=4] [ref=e93]
+          - paragraph [ref=e94]: Looking to save on delivery? Our "Pick-Up & Party" option lets you grab your rentals and drop them off when the fun is done, complete with easy setup guides.
+      - generic [ref=e95]:
+        - generic [ref=e96]: 🎊
+        - generic [ref=e97]:
+          - heading "The Full Party Package" [level=4] [ref=e98]
+          - paragraph [ref=e99]: Games, snacks, seating, and inflatables all under one roof. No need to find 5 different vendors. We've got everything your event needs, from first bounce to last treat.
+  - generic [ref=e101]:
+    - generic [ref=e102]:
+      - paragraph [ref=e103]: What We Offer
+      - heading "Everything You Need All in One Place" [level=2] [ref=e104]:
+        - text: Everything You Need
+        - emphasis [ref=e105]: All in One Place
+      - paragraph [ref=e107]: Browse our full lineup of rental packages. From the wow-factor centerpiece to the finishing touches — we have it all.
+    - generic [ref=e108]:
+      - link "🏰 Inflatables Bring the wow factor with our crowd-favourite inflatables. From classic bouncy castles to a full inflatable night club experience — these are guaranteed to be the centre of attention. All units are sanitized upon setup and built to commercial safety standards. 🚛 Includes Delivery & Setup" [ref=e109] [cursor=pointer]:
+        - /url: inflatables.html
+        - generic [ref=e110]: 🏰
+        - heading "Inflatables" [level=3] [ref=e111]
+        - paragraph [ref=e112]: Bring the wow factor with our crowd-favourite inflatables. From classic bouncy castles to a full inflatable night club experience — these are guaranteed to be the centre of attention. All units are sanitized upon setup and built to commercial safety standards.
+        - generic [ref=e113]: 🚛 Includes Delivery & Setup
+      - link "⛺ Tents & Party Equipment Host rain or shine with our 20×40 event tent. Add tables and chairs for a complete outdoor venue setup — professional delivery and installation included. 🚛 Includes Delivery & Setup" [ref=e114] [cursor=pointer]:
+        - /url: tents-equipment.html
+        - generic [ref=e115]: ⛺
+        - heading "Tents & Party Equipment" [level=3] [ref=e116]
+        - paragraph [ref=e117]: Host rain or shine with our 20×40 event tent. Add tables and chairs for a complete outdoor venue setup — professional delivery and installation included.
+        - generic [ref=e118]: 🚛 Includes Delivery & Setup
+      - link "🎯 Nerf Wars Turn your party into a full-on battle zone. Choose from Silver, Gold, or Platinum packages — the ultimate tactical experience for kids, teens, and adults alike. 📦 DIY Pick-Up Available" [ref=e119] [cursor=pointer]:
+        - /url: nerf-wars.html
+        - generic [ref=e120]: 🎯
+        - heading "Nerf Wars" [level=3] [ref=e121]
+        - paragraph [ref=e122]: Turn your party into a full-on battle zone. Choose from Silver, Gold, or Platinum packages — the ultimate tactical experience for kids, teens, and adults alike.
+        - generic [ref=e123]: 📦 DIY Pick-Up Available
+      - link "🎲 Stag & Doe Rentals Keep the crowd engaged and energy high all night. Our curated selection of fundraiser-ready games — skeeball, poker tables, prize wheels, raffle wheels, and more — are classic crowd-pleasers built for social events. 📦 DIY Pick-Up Available" [ref=e124] [cursor=pointer]:
+        - /url: stag-and-doe.html
+        - generic [ref=e125]: 🎲
+        - heading "Stag & Doe Rentals" [level=3] [ref=e126]
+        - paragraph [ref=e127]: Keep the crowd engaged and energy high all night. Our curated selection of fundraiser-ready games — skeeball, poker tables, prize wheels, raffle wheels, and more — are classic crowd-pleasers built for social events.
+        - generic [ref=e128]: 📦 DIY Pick-Up Available
+      - link "🍭 Snack Machines No party is complete without treats. Add cotton candy, movie-theatre popcorn, or snow cones to create that authentic carnival vibe. Materials included — just bring the excitement. 📦 DIY Pick-Up Available" [ref=e129] [cursor=pointer]:
+        - /url: snack-machines.html
+        - generic [ref=e130]: 🍭
+        - heading "Snack Machines" [level=3] [ref=e131]
+        - paragraph [ref=e132]: No party is complete without treats. Add cotton candy, movie-theatre popcorn, or snow cones to create that authentic carnival vibe. Materials included — just bring the excitement.
+        - generic [ref=e133]: 📦 DIY Pick-Up Available
+  - generic [ref=e135]:
+    - generic [ref=e136]:
+      - paragraph [ref=e137]: Pick-Up & Party
+      - heading "Save on Delivery. Keep All the Fun." [level=2] [ref=e138]:
+        - text: Save on Delivery.
+        - emphasis [ref=e139]: Keep All the Fun.
+      - paragraph [ref=e141]: Our DIY rental option is the perfect choice for budget-conscious hosts. Pick up your equipment directly from us, follow our easy setup guides, and drop everything off when the party's over. It's that simple.
+      - paragraph [ref=e142]: Every DIY rental includes a fully refundable damage deposit to ensure equipment comes back in the same great condition it left. A deposit is collected at pickup and returned upon safe return.
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e146]: "1"
+          - generic [ref=e147]:
+            - heading "Browse & Book Online" [level=5] [ref=e148]
+            - paragraph [ref=e149]: Select your rentals, choose your date, and confirm your booking — all in a few clicks.
+        - generic [ref=e150]:
+          - generic [ref=e151]: "2"
+          - generic [ref=e152]:
+            - heading "Pick Up Your Gear" [level=5] [ref=e153]
+            - paragraph [ref=e154]: Arrive at our Milton location with your truck or van (required for some larger items — see product pages). Your equipment will be ready and waiting.
+        - generic [ref=e155]:
+          - generic [ref=e156]: "3"
+          - generic [ref=e157]:
+            - heading "Set Up & Party" [level=5] [ref=e158]
+            - paragraph [ref=e159]: Easy-to-follow setup guides are included with every DIY rental. Your guests will never know the difference.
+        - generic [ref=e160]:
+          - generic [ref=e161]: "4"
+          - generic [ref=e162]:
+            - heading "Drop Off & Collect Deposit" [level=5] [ref=e163]
+            - paragraph [ref=e164]: Return the equipment in its original condition and we'll refund your damage deposit on the spot.
+      - generic [ref=e165]:
+        - strong [ref=e166]: "⚠️ Vehicle Note:"
+        - text: Some larger items (e.g., Nerf Artillery Trailer) require a pickup truck or cargo van. Check individual product pages for vehicle requirements before booking.
+  - generic [ref=e168]:
+    - generic [ref=e169]:
+      - paragraph [ref=e170]: What Families Are Saying
+      - heading "Real Parties. Real Memories." [level=2] [ref=e171]:
+        - text: Real Parties.
+        - emphasis [ref=e172]: Real Memories.
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]: “
+        - paragraph [ref=e177]: We rented the inflatable night club for my daughter's 16th birthday and it was a massive hit! The setup was professional, and the unit was spotless. It really made the party unforgettable.
+        - generic [ref=e178]:
+          - strong [ref=e179]: Sarah Jenkins
+          - text: Inflatables Rental
+      - generic [ref=e180]:
+        - generic [ref=e181]: “
+        - paragraph [ref=e182]: The Platinum Nerf War package was exactly what we needed for our son's birthday. The kids had a blast, and the equipment was top-notch. Highly recommend the DIY pick-up option for great value!
+        - generic [ref=e183]:
+          - strong [ref=e184]: Mark Thompson
+          - text: Nerf Wars Package
+      - generic [ref=e185]:
+        - generic [ref=e186]: “
+        - paragraph [ref=e187]: Signature Celebrations handled everything for our family reunion. The tent was perfect for the weather, and the cotton candy machine was the star of the show. Stress-free from start to finish.
+        - generic [ref=e188]:
+          - strong [ref=e189]: Amanda Lee
+          - text: Events & Snack Machines
+  - generic [ref=e191]:
+    - heading "Perfect for Every Celebration." [level=3] [ref=e192]
+    - generic [ref=e193]:
+      - generic [ref=e194]: Birthday Parties
+      - generic [ref=e195]: Backyard Parties
+      - generic [ref=e196]: Family Battles
+      - generic [ref=e197]: Team Building
+      - generic [ref=e198]: Stag & Doe Fundraisers
+      - generic [ref=e199]: Wedding Socials
+      - generic [ref=e200]: School Events
+      - generic [ref=e201]: Corporate Events
+      - generic [ref=e202]: Neighbourhood Block Parties
+      - generic [ref=e203]: Indoor & Outdoor
+  - generic [ref=e205]:
+    - generic [ref=e206]:
+      - paragraph [ref=e207]: Get In Touch
+      - heading "Have Questions? We Have Answers." [level=2] [ref=e208]:
+        - text: Have Questions?
+        - emphasis [ref=e209]: We Have Answers.
+      - paragraph [ref=e211]: Can't find what you're looking for or curious about one of our products? Don't hesitate to reach out — we're happy to help you build the perfect package for your event.
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: 📞
+          - generic [ref=e215]:
+            - generic [ref=e216]: Phone
+            - text: +1 (905) 670-0010
+        - generic [ref=e217]:
+          - generic [ref=e218]: ✉️
+          - generic [ref=e219]:
+            - generic [ref=e220]: Email
+            - link "sceventrentalsmilton@gmail.com" [ref=e222] [cursor=pointer]:
+              - /url: mailto:sceventrentalsmilton@gmail.com
+        - generic [ref=e223]:
+          - generic [ref=e224]: 📍
+          - generic [ref=e225]:
+            - generic [ref=e226]: Serving
+            - text: Milton & Surrounding Areas
+      - generic [ref=e227]:
+        - link "📸 Instagram" [ref=e228] [cursor=pointer]:
+          - /url: https://instagram.com/sc.eventrentals
+        - link "👍 Facebook" [ref=e229] [cursor=pointer]:
+          - /url: https://facebook.com/sc.eventrentals
+    - generic [ref=e230]:
+      - heading "Quick Enquiry" [level=3] [ref=e231]
+      - generic [ref=e232]:
+        - generic [ref=e233]: Your Name
+        - textbox "Jane Smith" [ref=e234]
+      - generic [ref=e235]:
+        - generic [ref=e236]: Phone or Email
+        - textbox "(905) 555-0123" [ref=e237]
+      - generic [ref=e238]:
+        - generic [ref=e239]: Event Date
+        - textbox [ref=e240]
+      - generic [ref=e241]:
+        - generic [ref=e242]: I'm Interested In
+        - combobox [ref=e243]:
+          - option "Select a rental category…" [selected]
+          - option "Inflatables / Bouncy Castle"
+          - option "Inflatable Night Club"
+          - option "Event Tent & Furniture"
+          - option "Nerf Wars Package"
+          - option "Stag & Doe Games"
+          - option "Snack Machines"
+          - option "Multiple / Full Package"
+      - generic [ref=e244]:
+        - generic [ref=e245]: Message (Optional)
+        - textbox "Tell us a little about your event…" [ref=e246]
+      - button "Send Enquiry →" [ref=e247] [cursor=pointer]
+  - generic [ref=e248]:
+    - link "Home" [ref=e249] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e250]: "|"
+    - link "FAQ" [ref=e251] [cursor=pointer]:
+      - /url: faq.html
+    - generic [ref=e252]: "|"
+    - link "Terms of Service" [ref=e253] [cursor=pointer]:
+      - /url: terms-of-service.html
+    - generic [ref=e254]: "|"
+    - link "Privacy Policy" [ref=e255] [cursor=pointer]:
+      - /url: privacy-policy.html
+    - generic [ref=e256]: "|"
+    - link "Contact Us" [ref=e257] [cursor=pointer]:
+      - /url: contact-us.html
+  - contentinfo [ref=e258]:
+    - paragraph [ref=e259]: © 2025 Signature Celebrations Event Rentals · Milton, ON · All Rig

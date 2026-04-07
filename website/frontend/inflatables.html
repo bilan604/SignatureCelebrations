@@ -97,7 +97,39 @@
     @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
     .fade-up{animation:fadeUp .7s ease both;}
 
-    @media(max-width:900px){.product-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}.nightclub-feature{grid-template-columns:1fr;}}
+    @media (max-width: 900px) {
+      nav {
+        padding: .75rem 4%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .nav-brand span {
+        display: none;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        order: 3;
+        padding-top: .5rem;
+        flex-wrap: wrap;
+      }
+      .nav-links a {
+        font-size: .65rem;
+      }
+      .page-hero {
+        padding-top: 190px;
+      }
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-links {
+        display: flex;
+      }
+      .nightclub-feature {
+        grid-template-columns: 1fr;
+      }
+    }
     @media(max-width:580px){.product-grid{grid-template-columns:1fr;}}
   </style>
 </head>
