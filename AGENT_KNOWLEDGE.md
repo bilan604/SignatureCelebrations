@@ -1,8 +1,5 @@
 # Agent Knowledge - SignatureCelebrations
 
-## Onboarding & Tutorials
-- **TUTORIAL.md**: A beginner-friendly guide for non-coders to set up the environment, run the app, use Gemini-CLI for "antigravity" editing, and manage changes via Git.
-
 ## Project Structure
 - **website/frontend/**: Contains HTML templates for the website.
 - **website/backend/app.py**: FastAPI backend server.
